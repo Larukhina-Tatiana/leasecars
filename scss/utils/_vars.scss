@@ -1,0 +1,13 @@
+:root {
+    --black: #040404;
+    --dark-grey: #363636;
+    --gold: #9F6B08;
+    --light-gold: #F9CE5C;
+    --gradient-light:  linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
+    --white: #FFFFFF;
+}
+
+@mixin transition ($transition-property: color, $transition-duration: 750ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)){
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+}

@@ -1,0 +1,26 @@
+@import "./utils/_global";
+@import "./utils/_vars";
+@import "./components/_fonts";
+@import "./components/_header";
+@import "./components/_nav";
+@import "./components/_logo";
+@import "./components/_hero";
+@import "./components/_info";
+@import "./components/_track";
+@import "./components/_evo";
+@import "./components/_blog";
+@import "./components/_footer";
+
+
+.swiper-button-left {
+  transform: translateX(-41px);
+
+
+}
+.swiper-button-right {
+  transform: translateX(8px);
+}
+
+
+
+
