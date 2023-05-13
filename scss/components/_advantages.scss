@@ -2,15 +2,18 @@
 
 
   &__list {
-    display: flex;
-    gap: 0 40px;
+    // display: flex;
+    gap: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
   }
 
   &__item {
     position: relative;
     padding-top: 180px;
-    flex-basis: calc(100% - 120px / 3);
+    // flex-basis: calc(100% - 120px / 3);
 
     &::before {
       position: absolute;

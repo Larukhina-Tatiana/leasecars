@@ -34,7 +34,8 @@ picture {
   display: block;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -215,13 +216,13 @@ body {
 }
 
 .advantages__list {
-  display: flex;
-  gap: 0 40px;
+  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .advantages__item {
   position: relative;
   padding-top: 180px;
-  flex-basis: calc(100% - 40px);
 }
 .advantages__item::before {
   position: absolute;
@@ -245,6 +246,53 @@ body {
 
 .icon4::before {
   content: url(/images/advantages/icon4.svg);
+}
+
+.howdoes__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.section__title + .howdoes__text {
+  margin-bottom: 50px;
+}
+.howdoes .subtitle {
+  margin-bottom: 50px;
+  text-align: left;
+}
+.howdoes__list {
+  margin-bottom: 70px;
+  counter-reset: myCounter;
+}
+.howdoes__item {
+  list-style-type: none;
+  width: 270px;
+  margin-left: auto;
+  padding: 19px 0 19px 240px;
+  position: relative;
+  box-sizing: content-box;
+  min-height: 63px;
+}
+.howdoes__item + .howdoes__item {
+  margin-top: 40px;
+}
+.howdoes__item::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: var(--white);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .footer {

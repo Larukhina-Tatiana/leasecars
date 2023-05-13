@@ -1,0 +1,65 @@
+.howdoes {
+
+  &__inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .section__title + &__text {
+    margin-bottom: 50px;
+  }
+
+  & .subtitle {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  &__list {
+    margin-bottom: 70px;
+    counter-reset: myCounter;
+  }
+
+  &__item {
+    list-style-type: none;
+    // display: flex;
+    // gap: 140px;
+    // align-items: center;
+
+    // &:not(:last-child) {
+    //   margin-bottom: 40px;
+    // }
+
+    // вместо флекса))
+    width: 270px;
+    margin-left: auto;
+    padding: 19px 0 19px 240px;
+    position: relative;
+    box-sizing: content-box;
+    min-height: 63px;
+    & + & {
+      margin-top: 40px;
+    }
+    
+
+    &::before {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--blue);
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 58px;
+      color: var(--white);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+// для позишина
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+  }
+}
