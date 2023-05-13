@@ -1,0 +1,39 @@
+.advantages {
+
+
+  &__list {
+    display: flex;
+    gap: 0 40px;
+
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 180px;
+    flex-basis: calc(100% - 120px / 3);
+
+    &::before {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left: calc(50% - 75px);
+      top: 0;
+    }
+  }
+}
+
+.icon1::before {
+  content: url(/images/advantages/icon1.svg);
+}
+
+.icon2::before {
+  content: url(/images/advantages/icon2.svg);
+}
+
+.icon3::before {
+  content: url(/images/advantages/icon3.svg);
+}
+
+.icon4::before {
+  content: url(/images/advantages/icon4.svg);
+}

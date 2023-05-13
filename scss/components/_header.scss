@@ -1,0 +1,22 @@
+.header {
+  background-color: var(--black);
+
+  color: var(--white);
+
+  &__main {
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+
+}

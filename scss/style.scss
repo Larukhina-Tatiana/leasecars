@@ -1,26 +1,29 @@
 @import "./utils/_global";
 @import "./utils/_vars";
 @import "./components/_fonts";
+@import "./components/_container";
 @import "./components/_header";
 @import "./components/_nav";
 @import "./components/_logo";
+@import "./components/_wrapper";
 @import "./components/_hero";
-@import "./components/_info";
-@import "./components/_track";
-@import "./components/_evo";
-@import "./components/_blog";
+@import "./components/_swiper";
+@import "./components/swiper-pagination-bullet";
+@import "./components/_advantages";
+// @import "./components/_evo";
+// @import "./components/_blog";
 @import "./components/_footer";
 
 
-.swiper-button-left {
-  transform: translateX(-41px);
+
+// .swiper-button-left {
+//   transform: translateX(-41px);
 
 
-}
-.swiper-button-right {
-  transform: translateX(8px);
-}
-
-
-
-
+// }
+// .swiper-button-right {
+//   transform: translateX(8px);
+// }
+// <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">
+//                     <use href="./images/projects/icons.svg#icon-search"></use>
+//                   </svg>
