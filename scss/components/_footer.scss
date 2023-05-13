@@ -24,6 +24,15 @@
     }
   }
 
+  &__menu-link,
+  &__copyright-link {
+    @include transition ($transition-property: color);
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+
 
   &__app-list {
     display: flex;
@@ -32,12 +41,18 @@
     gap: 0 39px;
     margin-bottom: 52px;
   }
+  &__app-link {
+    @include transition ($transition-property: scale);
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 
   &__copy {
     max-width: 806px;
     text-align: center;
     margin: 0 auto 30px;
-   
+
     &-text {
       font-size: 12px;
       line-height: calc(15/12);

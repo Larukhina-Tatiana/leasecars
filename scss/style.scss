@@ -11,9 +11,9 @@
 @import "./components/swiper-pagination-bullet";
 @import "./components/_advantages";
 @import "./components/howdoes";
-// @import "./components/_blog";
+@import "./components/_video";
 @import "./components/_footer";
-
+@import "./components/_important";
 
 
 // .swiper-button-left {
@@ -27,3 +27,5 @@
 // <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">
 //                     <use href="./images/projects/icons.svg#icon-search"></use>
 //                   </svg>
+
+// @include transition ($transition-property: color);

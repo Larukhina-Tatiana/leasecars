@@ -1,0 +1,15 @@
+.video {
+
+  & .section__title {
+    margin-bottom: 20px;
+  }
+
+  & .subtitle {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    display: block;
+    margin: 0 auto;
+  }
+}

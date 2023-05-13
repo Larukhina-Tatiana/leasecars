@@ -1,8 +1,4 @@
 .nav {
-  // display: flex;
-
-
-
 
   &__list {
     display: flex;
@@ -13,5 +9,10 @@
     font-weight: 700;
     line-height: calc(19/16);
     text-transform: uppercase;
+    @include transition ($transition-property: color);
+
+    &:hover {
+      color: var(--blue);
+    }
   }
 }

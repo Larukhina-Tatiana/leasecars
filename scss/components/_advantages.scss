@@ -14,14 +14,28 @@
     position: relative;
     padding-top: 180px;
     // flex-basis: calc(100% - 120px / 3);
-
+    &:hover {
+      &::before {
+        transform: scale(1.1);
+      }
+        
+      }
+    
     &::before {
       position: absolute;
       width: 150px;
       height: 150px;
       left: calc(50% - 75px);
       top: 0;
+      @include transition ($transition-property: scale);
+
+      
     }
+
+
+    // &:hover &::before {
+    //   scale: 1.5;
+    // }
   }
 }
 
