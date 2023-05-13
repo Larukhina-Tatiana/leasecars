@@ -248,19 +248,19 @@ body {
 }
 
 .icon1::before {
-  content: url(/images/advantages/icon1.svg);
+  content: url(../images/advantages/icon1.svg);
 }
 
 .icon2::before {
-  content: url(/images/advantages/icon2.svg);
+  content: url(../images/advantages/icon2.svg);
 }
 
 .icon3::before {
-  content: url(/images/advantages/icon3.svg);
+  content: url(../images/advantages/icon3.svg);
 }
 
 .icon4::before {
-  content: url(/images/advantages/icon4.svg);
+  content: url(../images/advantages/icon4.svg);
 }
 
 .howdoes__inner {
