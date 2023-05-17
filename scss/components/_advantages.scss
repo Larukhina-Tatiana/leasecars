@@ -29,20 +29,27 @@
       @include transition ($transition-property: scale);
     }
   }
+
+  @media screen and (width < 861px) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
 }
 
-.icon1::before {
-  content: url(../images/advantages/icon1.svg);
-}
+  .icon1::before {
+    content: url(../images/advantages/icon1.svg);
+  }
 
-.icon2::before {
-  content: url(../images/advantages/icon2.svg);
-}
+  .icon2::before {
+    content: url(../images/advantages/icon2.svg);
+  }
 
-.icon3::before {
-  content: url(../images/advantages/icon3.svg);
-}
+  .icon3::before {
+    content: url(../images/advantages/icon3.svg);
+  }
 
-.icon4::before {
-  content: url(../images/advantages/icon4.svg);
-}
+  .icon4::before {
+    content: url(../images/advantages/icon4.svg);
+  }

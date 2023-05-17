@@ -19,8 +19,23 @@
   &__img {
     margin-bottom: 20px;
     @include transition ($transition-property: box-shadow);
+
     &:hover {
       box-shadow: 0px 4px 16px rgb(0 0 0 / 45%);
     }
+  }
+
+
+  @media screen and (width < 1180px) {
+    &__list {
+      gap: 20px;
+    }
+  }
+
+  @media screen and (width < 860px) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
   }
 }
