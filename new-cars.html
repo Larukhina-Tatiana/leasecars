@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leasing From D&M</title>
   <link rel="stylesheet" href="scss/modern-normalize.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="scss/style.css">
 </head>
 
@@ -21,7 +22,7 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="">NEW CARS</a>
+                <a class="nav__link active" href="/new-cars.html">NEW CARS</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="">PRE-OWNED CARS</a>
@@ -33,7 +34,7 @@
                 <a class="nav__link" href="">LEASE VS BUY</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="">CONTACT</a>
+                <a class="nav__link" href="/contacts.html">CONTACT</a>
               </li>
             </ul>
           </nav>
@@ -41,14 +42,282 @@
       </div>
     </header>
     <main class="main">
+      <section class="catalog">
+        <div class="container">
+          <h2 class="section__title">Choose your car</h2>
+          <div class="catalog__inner">
+            <ul class="catalog__filters">
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn catalog__filters-btn--active" data-button="content-1">Car and Minivan</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn" data-button="content-2">Trucks</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn" data-button="content-3">Crossovers & SUVs</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn" data-button="content-4">Electrified</button>
+              </li>
+            </ul>
+            <ul class="catalog__car-list catalog__car-list--active" id="content-1">
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-1.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Toyota Crown 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$ 650/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-2.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Prius Prime 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$ 450/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-3.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Toyota Prius 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$ 400/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-4.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Hyundai Kona 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$ 510/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
 
-      
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-5.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Ford Explorer 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$1,013/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-6.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class=" subtitle">Santa Fe 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$739/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-7.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class=" subtitle">KIA Niro 2023</h3>
+                  <p class="catalog__car-text">starting from $ 36600</p>
+                  <p class="catalog__car-price">$554/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-8.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Chevrolet Silverado</h3>
+                  <p class="catalog__car-text">starting from $ 62260</p>
+                  <p class="catalog__car-price">$1,032/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-9.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class=" subtitle">Honda CR-V 2023</h3>
+                  <p class="catalog__car-text">starting from $ 35650</p>
+                  <p class="catalog__car-price">$ 591/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-10.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class=" subtitle">Hyundai Tucson</h3>
+                  <p class="catalog__car-text">starting from $ 35650</p>
+                  <p class="catalog__car-price">$ 528/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-11.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Chevrolet Equinox </h3>
+                  <p class="catalog__car-text">starting from $ 31885</p>
+                  <p class="catalog__car-price">$ 471/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-12.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Jeep Wrangler 2023</h3>
+                  <p class="catalog__car-text">starting from $ 60000</p>
+                  <p class="catalog__car-price">$997/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+            </ul>
+            <ul class="catalog__car-list catalog__car-list--active" id="content-2">
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-1.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Toyota Crown 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$ 650/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-2.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Prius Prime 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$ 450/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-3.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Toyota Prius 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$ 400/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-4.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Hyundai Kona 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$ 510/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-5.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Ford Explorer 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$1,013/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-6.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class=" subtitle">Santa Fe 2023</h3>
+                  <p class="catalog__car-text">starting from $ 39900</p>
+                  <p class="catalog__car-price">$739/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-7.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class=" subtitle">KIA Niro 2023</h3>
+                  <p class="catalog__car-text">starting from $ 36600</p>
+                  <p class="catalog__car-price">$554/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-8.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Chevrolet Silverado</h3>
+                  <p class="catalog__car-text">starting from $ 62260</p>
+                  <p class="catalog__car-price">$1,032/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-9.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class=" subtitle">Honda CR-V 2023</h3>
+                  <p class="catalog__car-text">starting from $ 35650</p>
+                  <p class="catalog__car-price">$ 591/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-10.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class=" subtitle">Hyundai Tucson</h3>
+                  <p class="catalog__car-text">starting from $ 35650</p>
+                  <p class="catalog__car-price">$ 528/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-11.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Chevrolet Equinox </h3>
+                  <p class="catalog__car-text">starting from $ 31885</p>
+                  <p class="catalog__car-price">$ 471/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+              <li class="catalog__car-item">
+                <img class="catalog__car-img" src="./images/catalog/img-12.jpg" alt="">
+                <div class="catalog__car-content">
+                  <h3 class="subtitle">Jeep Wrangler 2023</h3>
+                  <p class="catalog__car-text">starting from $ 60000</p>
+                  <p class="catalog__car-price">$997/mo</p>
+                </div>
+                <a class="catalog__car-link" href="#">see details</a>
+              </li>
+            </ul>
+            <ul class="catalog__car-list catalog__car-list--active" id="content-3">3</ul>
+          </div>
+          <a class="showmore-link" href="/new-cars.html">SHOW MORE</a>
+
+        </div>
+      </section>
+
+      <section class="blog section">
+        <div class="container">
+          <div class="blog__list">
+            <div class="blog__item">
+              <img class="blog__item-img" src="./images/blog/blog-1.jpg" alt="images blog">
+              <h3 class="subtitle">An easier way to buy your next Toyota</h3>
+              <a class="blog__item-link" href="">more</a>
+            </div>
+            <div class="blog__item">
+              <img class="blog__item-img" src="./images/blog/blog-2.jpg" alt="images blog">
+              <h3 class="subtitle">A Guide to Road-Tripping With Pets</h3>
+              <a class="blog__item-link" href="">more</a>
+            </div>
+          </div>
+          <a class="showmore-link" href="/new-cars.html">SHOW MORE</a>
+        </div>
+      </section>
+
+
     </main>
     <footer class="footer">
       <div class="container">
         <nav class="footer__menu">
           <ul class="footer__menu-list">
-            <p class="footer__menu-title">Products</p>
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">Products</p>
+            </li>
             <li class="footer__menu-item">
               <a class="footer__menu-link" href="">Used</a>
             </li>
@@ -61,7 +330,9 @@
           </ul>
 
           <ul class="footer__menu-list">
-            <p class="footer__menu-title">Resources</p>
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">Resources</p>
+            </li>
             <li class="footer__menu-item">
               <a class="footer__menu-link" href="">Blog</a>
             </li>
@@ -69,12 +340,14 @@
               <a class="footer__menu-link" href="">FAQ</a>
             </li>
             <li class="footer__menu-item">
-              <a class="footer__menu-link" href="">Contact us</a>
+              <a class="footer__menu-link" href="./contacts.html">Contact us</a>
             </li>
           </ul>
-
           <ul class="footer__menu-list">
-            <p class="footer__menu-title">Work With TrueCar</p>
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">Work With TrueCar</p>
+            </li>
+
             <li class="footer__menu-item">
               <a class="footer__menu-link" href="">Dealers</a>
             </li>
@@ -84,7 +357,9 @@
           </ul>
 
           <ul class="footer__menu-list">
-            <p class="footer__menu-title">About</p>
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">About</p>
+            </li>
             <li class="footer__menu-item">
               <a class="footer__menu-link" href="">About us</a>
             </li>
@@ -99,12 +374,12 @@
         <ul class="footer__app-list">
           <li class="footer__app-item">
             <a class="footer__app-link" href="">
-              <img class="footer__app-img" src="/images/icons/apps.svg" alt="Icon App Store" >
+              <img class="footer__app-img" src="./images/icons/apps.svg" alt="Icon App Store">
             </a>
           </li>
           <li class="footer__app-item">
             <a class="footer__app-link" href="">
-              <img class="footer__app-img" src="/images/icons/googleplay.svg" alt="Icon Google Play" >
+              <img class="footer__app-img" src="./images/icons/googleplay.svg" alt="Icon Google Play">
             </a>
           </li>
         </ul>
@@ -124,19 +399,21 @@
         <nav class="footer__copyright">
           <ul class="footer__copyright-list">
             <li class="footer__copyright-item">
-              <a class="fotter__copyright-link"  href="">Terms of Service</a>
+              <a class="footer__copyright-link" href="">Terms of Service</a>
             </li>
             <li class="footer__copyright-item">
-              <a class="fotter__copyright-link"  href="">Privacy Policy</a>
+              <a class="footer__copyright-link" href="">Privacy Policy</a>
             </li>
             <li class="footer__copyright-item">
-              <a class="fotter_copyright-link"  href="">Do Not Sell My Personal Information</a>
+              <a class="footer__copyright-link" href="">Do Not Sell My Personal Information</a>
             </li>
           </ul>
         </nav>
       </div>
     </footer>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/new_cars-btn.js"></script>
 </body>
 
 </html>

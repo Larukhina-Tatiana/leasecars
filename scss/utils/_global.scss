@@ -83,6 +83,25 @@ body {
   margin-bottom: 30px;
 }
 
+.active {
+  color: var(--blue);
+}
+
+.showmore-link {
+  display: block;
+  margin: 0 auto;
+  width: 223px;
+  padding: 13px;
+  color: var(--white);
+  background-color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  @include transition ($transition-property: background-color);
+  &:hover {
+    background-color: var(--blue);
+  }
+}
+
 /* Скрытие заголовка */
 // .visually-hidden {
 //   position: absolute;
