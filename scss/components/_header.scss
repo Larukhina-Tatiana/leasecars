@@ -19,8 +19,9 @@
     padding-bottom: 45px;
   }
 
-  @media screen and (width < 861px) {}
-  &__inner {
-    align-items: center;
+  @media screen and (width < 861px) {
+    &__inner {
+      align-items: center;
+    }
   }
 }

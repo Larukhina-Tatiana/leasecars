@@ -157,8 +157,10 @@ body {
   padding-top: 40px;
   padding-bottom: 45px;
 }
-.header__inner {
-  align-items: center;
+@media screen and (width < 861px) {
+  .header__inner {
+    align-items: center;
+  }
 }
 
 .nav__list {
