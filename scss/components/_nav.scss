@@ -18,7 +18,7 @@
 
   &__menu-btn {
     width: 30px;
-    height:20px;
+    height: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -32,15 +32,32 @@
     }
   }
 
-    @media screen and (width < 861px ) {
-      &__menu-btn {
-        display: flex;
-      }
+  @media screen and (width < 861px) {
+    &__menu-btn {
+      display: flex;
+      position: relative;
+      z-index: 6;
 
-      &__list {
-        position: absolute;
-        background-color: var(--black);
-        
-      }
     }
+
+    &__list {
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding-top: 200px;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--black);
+      transform: translateY(-100%);
+      @include transition ($transition-property: transform);
+    }
+
+    &__list.nav__list--active {
+      transform: translateY(0%);
+    }
+  }
 }

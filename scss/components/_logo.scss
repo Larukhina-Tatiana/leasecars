@@ -1,0 +1,11 @@
+.logo {
+  @media screen and (width < 861px ) {
+    position: relative;
+    z-index: 6;
+  }
+
+  @media screen and (width < 541px) {
+    width: 55px;
+    height: 25px;
+  }
+}

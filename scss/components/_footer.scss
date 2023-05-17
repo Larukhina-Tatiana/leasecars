@@ -64,4 +64,24 @@
     justify-content: center;
     gap: 0 40px;
   }
+
+  @media screen and (width < 769px) {
+    &__menu {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 70px 50px;
+
+      &-item {
+        text-align: center;
+      }
+    }
+  }
+
+  @media screen and (width < 769px) {
+    &__copyright-list {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+  }
 }

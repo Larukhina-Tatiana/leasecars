@@ -13,7 +13,7 @@ const swiper = new Swiper(".swiper", {
 const menuBtn = document.querySelector('.nav__menu-btn');
 const menu = document.querySelector('.nav__list');
 menuBtn.addEventListener('click', () => {
-  menu.classList.toggle('menu__list-active');
+  menu.classList.toggle('nav__list--active');
 });
 
 

@@ -13,5 +13,17 @@
     margin: 0 auto;
     width: 100%;
   }
-}
 
+  @media screen and (width < 769px) {
+    &__content {
+      height: 400px;
+    }
+  }
+
+
+  @media screen and (width < 541px) {
+    &__content {
+      height: 200px;
+    }
+  }
+}
