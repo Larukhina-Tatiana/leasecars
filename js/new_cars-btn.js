@@ -25,5 +25,10 @@ function open(evt) {
 }
 //
 
+const lightbox = new SimpleLightbox(".catalog__car-img-link", {
+  // closeText: "&#128514;",
+  fadeSpeed: 300
+});
+
 
 AOS.init();
