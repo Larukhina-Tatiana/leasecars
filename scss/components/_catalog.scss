@@ -128,6 +128,8 @@
 
   @media screen and (width < 651px) {
     &__car-list {
+      max-width: 360px;
+      margin: 0 auto;
       grid-template-columns: repeat(1, 1fr);
 
     }

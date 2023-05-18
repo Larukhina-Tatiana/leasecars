@@ -715,6 +715,20 @@ body {
 .contacts__form-btn:hover {
   background-color: var(--blue);
 }
+@media screen and (width < 651px) {
+  .contacts {
+    padding-top: 50px;
+  }
+  .contacts .subtitle {
+    padding: 0 10px;
+  }
+  .contacts__form {
+    gap: 30px;
+  }
+  .contacts__form-input {
+    flex-basis: 100%;
+  }
+}
 
 .blog {
   padding-bottom: 150px;
@@ -882,6 +896,8 @@ body {
 }
 @media screen and (width < 651px) {
   .catalog__car-list {
+    max-width: 360px;
+    margin: 0 auto;
     grid-template-columns: repeat(1, 1fr);
   }
 }

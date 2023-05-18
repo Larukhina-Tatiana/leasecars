@@ -75,4 +75,21 @@
       background-color: var(--blue);
     }
   }
+
+  @media screen and (width < 651px) {
+    padding-top: 50px;
+
+    & .subtitle {
+      padding: 0 10px;
+    }
+
+    &__form {
+      gap: 30px;
+    }
+
+    &__form-input {
+      flex-basis: 100%;
+    }
+  }
+
 }
