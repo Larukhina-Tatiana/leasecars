@@ -84,33 +84,45 @@
     }
   }
 
-    @media screen and (width < 1181px ) {
-      &__car-list {
+  @media screen and (width < 1181px) {
+    &__car-list {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
-  @media screen and (width < 902px ) {
+  @media screen and (width < 902px) {
     &__filters {
       margin: 0 auto 50px;
       gap: 40px;
     }
   }
 
-  @media screen and (width < 861px ) {
+  @media screen and (width < 861px) {
     &__car-list {
       grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
     }
   }
 
-  @media screen and (width < 651px ) {
-    &__car-list {
-      grid-template-columns: repeat(1, 1fr);
+  @media screen and (width < 783px) {
+    &__filters {
+      flex-direction: column;
+      align-items: center;
     }
 
     &__filters-btn {
-      font-weight: 700;
+
       font-size: 18px;
     }
+
   }
+
+  @media screen and (width < 651px) {
+    &__car-list {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+  }
+
+
 }
