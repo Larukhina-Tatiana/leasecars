@@ -792,9 +792,6 @@ body {
 .catalog {
   padding-top: 100px;
 }
-.catalog__inner {
-  margin-bottom: 70px;
-}
 .catalog__filters {
   max-width: 886px;
   display: flex;
@@ -817,6 +814,7 @@ body {
   display: none;
   grid-template-columns: repeat(4, 1fr);
   gap: 100px 40px;
+  margin-bottom: 70px;
 }
 .catalog__car-list.catalog__car-list--active {
   display: grid;

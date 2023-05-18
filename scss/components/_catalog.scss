@@ -1,9 +1,9 @@
 .catalog {
   padding-top: 100px;
 
-  &__inner {
-    margin-bottom: 70px;
-  }
+  // &__inner {
+  //   margin-bottom: 70px;
+  // }
 
 
   &__filters {
@@ -32,6 +32,7 @@
     display: none;
     grid-template-columns: repeat(4, 1fr);
     gap: 100px 40px;
+        margin-bottom: 70px;
 
     &.catalog__car-list--active {
       display: grid;
