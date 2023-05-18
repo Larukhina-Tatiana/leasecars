@@ -36,6 +36,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 picture {
@@ -78,7 +79,7 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-@media screen and (width < 541px) {
+@media screen and (width < 886px) {
   .section {
     padding-top: 70px;
   }
@@ -730,7 +731,6 @@ body {
   flex-wrap: wrap;
 }
 .blog__item-img {
-  width: 100%;
   margin-bottom: 30px;
 }
 .blog .subtitle {
@@ -747,6 +747,32 @@ body {
 }
 .blog__item-link:hover {
   background-color: var(--black);
+}
+@media screen and (width < 1156px) {
+  .blog .subtitle {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  .blog__item-link {
+    margin-left: auto;
+  }
+}
+@media screen and (width < 886px) {
+  .blog {
+    padding-bottom: 70px;
+  }
+  .blog .subtitle {
+    font-size: 19px;
+    min-height: 50px;
+  }
+}
+@media screen and (width < 651px) {
+  .blog__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog .subtitle {
+    min-height: auto;
+  }
 }
 
 .catalog {
@@ -765,7 +791,7 @@ body {
 .catalog__filters-btn {
   font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.2;
   color: var(--black);
   transition-duration: 550ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -785,7 +811,6 @@ body {
   text-align: center;
 }
 .catalog__car-img {
-  height: 170px;
   background: #D9D9D9;
 }
 .catalog__car-content {
@@ -803,7 +828,7 @@ body {
 .catalog__car-price {
   font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.2;
   margin-bottom: 20px;
 }
 .catalog__car-link {
@@ -818,4 +843,29 @@ body {
 .catalog__car-link:hover {
   background-color: var(--blue);
   color: var(--white);
+}
+@media screen and (width < 1181px) {
+  .catalog__car-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (width < 902px) {
+  .catalog__filters {
+    margin: 0 auto 50px;
+    gap: 40px;
+  }
+}
+@media screen and (width < 861px) {
+  .catalog__car-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (width < 651px) {
+  .catalog__car-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .catalog__filters-btn {
+    font-weight: 700;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=style.css.map */
